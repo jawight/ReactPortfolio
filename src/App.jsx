@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Home from "./components/Hero"
 import Cards from './components/Cards'
 import Portal from './components/Portal'
-import Contact from './Contact.js'
+import Contact from './Contact.jsx'
 
 
 const App = () => {

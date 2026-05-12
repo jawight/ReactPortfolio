@@ -1,5 +1,4 @@
 import React from 'react';
-import Jumbotron from "react-bootstrap/Jumbotron"
 import './App.css';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="jumboHolder">
       <div class="container p-3">
       </div>
-      <Jumbotron className="mt-5 bg-dark text-light mx-auto col-md-8 jumbotron text-center">
+      <div className="mt-5 bg-dark text-light mx-auto col-md-8 text-center p-5">
      
           jaredrwight@gmail.com 
           <br/>
@@ -17,7 +16,7 @@ function App() {
           <br />
           <a href="https://www.codewars.com/users/Trail3lazer"><i class="fab fa-node-js"></i> Code Wars</a>
     
-      </Jumbotron>
+      </div>
     </div>
   );
 }
