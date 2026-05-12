@@ -1,11 +1,8 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 import projects from "../../resource/projects.js";
-import LazyLoad from 'react-lazyload'
 import './card.css'
-
-const Lazy = LazyLoad;
 
 const makeCards = () => {
     let cardsArr = [];
@@ -15,9 +12,9 @@ const makeCards = () => {
         cardsArr.push(
             <div className="col-md-4" data-aos="slide-up">
                 <Card border='dark' text="light" key={key} className="bg-dark  m-2 p-1">
-                    <Lazy>
+                    <Suspense fallback={<div>Loading...</div>}>
                         <Card.Img src={projects[key].img} alt={projects[key].name + " screenshot"} variant="top" />
-                    </Lazy>
+                    </Suspense>
                     <Card.Body>
                         <Card.Title className="text-center">{projects[key].name}</Card.Title>
                         <Card.Text className="d-flex justify-content-center align-items-center">
